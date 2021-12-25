@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700&display=swap');
+
+body {
+  margin: 4% 10%;
+}
+
+/* Navbar Section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.menu-btn {
+  display: none;
+}
+h1, p, a {
+  font-family: 'Manrope', sans-serif;
+}
+p, a {
+  color: rgb(130, 130, 130);
+  font-weight: 400;
+  transition: .5s;
+  font-size: 18px;
+}
+a:hover {
+  color: #000;
+  transition: .5s;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  transition: .5s;
+}
+nav button {
+  margin-left: 30px;
+}
+button {
+  width: 140px;
+  height: 55px;
+  background-color: rgb(238, 124, 13);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+button:hover {
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgb(55, 40, 101);
+  border: 1px solid rgb(238, 124, 13);
+  transition: .5s;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.hero-text {
+  width: 56%;
+}
+.hero-text h1 {
+  font-size: 33px;
+}
+.hero-image {
+  width: 35%;
+  display: inline-block;
+}
+.hero-image img {
+  width: 100%;
+}
+.profile-image, .profile-description {
+  display: inline-block;
+}
+.profile-image img {
+  width: 60px;
+  height: 60px;
+  margin-top: 4px;
+}
+.profile-description {
+  display: flex;
+  flex-direction: column;
+}
+.profile-description p {
+  font-size: 16px;
+  margin-top: 0;
+}
+.profile-description .users-name {
+  margin-bottom: 7px;
+  margin-top: 11px;
+}
+.users-name {
+  font-weight: bold;
+  color: #000;
+}
+.profile {
+  width: 200px;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Blog Section */
+
+.blog-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0;
+}
+.blog-post {
+  width: 30%;
+}
+.blog-post h1 {
+  font-size: 33px;
+}
+.blog-post img {
+  width: 100%;
+  transition: .5s;
+}
+.blog-post img:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Tablet View */
+
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+  body {
+    margin: 3% 5%;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-image {
+    width: 100%;
+    display: inline-block;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+
+  /* Blog Section */
+
+  .blog-section {
+    margin: 10% 0;
+    flex-direction: column;
+  }
+  .blog-post {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+
+/* Mobile View */
+
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+  body {
+    margin: 2% 3%;
+  }
+  .menu-btn {
+    z-index: 3;
+    position: fixed;
+    right: 10%;
+    display: block;
+  }
+  #navLinks {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    width: 180px;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.7s;
+  }
+  #navLinks li, #navLinks button {
+    margin: 30px 0 0 0;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-image {
+    width: 100%;
+    display: inline-block;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+
+  /* Blog Section */
+
+  .blog-section {
+    margin: 10% 0;
+    flex-direction: column;
+  }
+  .blog-post {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* Footer Section  */
+
+  footer {
+    flex-direction: column;
+  }
+  footer img {
+    width: 120px;
+    height: 120px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}
