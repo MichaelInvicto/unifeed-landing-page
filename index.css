@@ -186,7 +186,8 @@ footer {
   .menu-btn {
     z-index: 3;
     position: fixed;
-    right: 10%;
+    right: 5%;
+    top: 2%;
     display: block;
   }
   #navLinks {
